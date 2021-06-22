@@ -69,7 +69,7 @@ def tokenz():
         menu()
     except (KeyError, IOError):
         os.system('clear')
-        print logo
+         logo()
         token = raw_input('\n[+] Your Token : ')
         try:
             otw = requests.get('https://graph.facebook.com/me?access_token=' + token)
